@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Trash Map </title>
+    </head>
+    <body>
+	    <div id="map"></div>
+		<p id="marker_position"></p>
+		<select id="option_select">
+			<option value="mark_all"> Mark All </option>
+			<option value="clear_mark"> Clear All Marker </option>
+			<option value="red"> Only Red Status </option>
+			<option value="yellow"> Only Yellow Status </option>
+			<option value="green"> Only Green Status </option>
+			<option value="clear"> Clear All Infomation Window </option>
+		</select>
+		<input type="button" id="marker_option_do" value="Do Selecting Option" onclick="do_option()"></input>
+		<select id="info_page">
+			<option value="SigfoxData"> SigfoxData </option>
+			<option value="SigfoxPositions"> SigfoxPositions </option>
+			<option value="SigfoxLogs"> SigfoxLogs </option>
+			<option value="PositionLogs"> PositionLogs </option>
+		</select>
+		<input type="button" id="info_page_button" value="See info" onclick="see_info()"></input>
+		<input type="button" id="logout_button" value="logout" onclick='logout()' </input>
+		
+		
+		
+		<div id="tb_con">
+			<ul id='main_list'>
+			</ul>
+		</div>
+
+    </body>
+</html>
